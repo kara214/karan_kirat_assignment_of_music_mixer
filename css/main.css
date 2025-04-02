@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.drag-drop-container {
+    margin: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.draggable:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+}
+
+.dropbox {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed #333;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
