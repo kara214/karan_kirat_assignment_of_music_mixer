@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Drag & Drop Music</div>
+        </nav>
+    </header>
+    
+    <section class="drag-drop-container">
+        <h1>Drag an Image to the Box to Play Music</h1>
+        <div class="image-container">
+            <div class="image-row">
+                <img src="image1.jpg" class="draggable" data-audio="audio1.mp3" draggable="true">
+                <img src="image2.jpg" class="draggable" data-audio="audio2.mp3" draggable="true">
+                <img src="image3.jpg" class="draggable" data-audio="audio3.mp3" draggable="true">
+            </div>
+            <div class="image-row">
+                <img src="image4.jpg" class="draggable" data-audio="audio4.mp3" draggable="true">
+                <img src="image5.jpg" class="draggable" data-audio="audio5.mp3" draggable="true">
+                <img src="image6.jpg" class="draggable" data-audio="audio6.mp3" draggable="true">
+            </div>
+        </div>
+        <div class="dropbox" id="dropbox">Drop Here</div>
+    </section>
+    
+    <audio id="audioPlayer" controls hidden></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
